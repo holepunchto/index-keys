@@ -9,7 +9,7 @@ class IndexUpdater {
 
     const types = [IndexEncoder.UINT]
     for (let i = 0; i < props.length; i++) {
-      types.push(toEncoder(props[i].type))
+      types.push(IndexEncoder.lookup(props[i].type))
       this.keys.push(props[i].key)
     }
 
@@ -76,14 +76,4 @@ module.exports = class IndexKeys {
     }
     return batch
   }
-}
-
-function toEncoder (name) {
-  switch (name) {
-    case 'string': return IndexEncoder.STRING
-    case 'buffer': return IndexEncoder.BUFFER
-    case 'uint': return IndexEncoder.UINT
-  }
-
-  throw new Error('Unknown index type: ' + name)
 }
