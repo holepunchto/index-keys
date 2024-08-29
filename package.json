@@ -1,6 +1,6 @@
 {
   "name": "index-keys",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Generate keys for a kv store for indexing",
   "main": "index.js",
   "scripts": {
