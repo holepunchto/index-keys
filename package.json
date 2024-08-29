@@ -1,0 +1,26 @@
+{
+  "name": "index-keys",
+  "version": "0.0.0",
+  "description": "Generate keys for a kv store for indexing",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "dependencies": {
+    "b4a": "^1.6.6",
+    "index-encoder": "^3.0.1"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/index-keys.git"
+  },
+  "author": "Holepunch Inc",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/index-keys/issues"
+  },
+  "homepage": "https://github.com/holepunchto/index-keys"
+}
